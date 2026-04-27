@@ -270,4 +270,23 @@ main aside > article > a > div{
     margin-bottom: 30px;
 }
 
-main aside > article > a > div >
+/*---------------------------------------------- Main --------------------------------------------------*/
+
+main #section2 > div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+main #section2 > div > a > article > img{
+    max-width: 322px;
+    max-height: 380px;
+}
+
+main #section2 > div > a > article > h3{
+    align-items: center;
+    text-decoration: none;
+    color: black;
+    padding-left: 90px;
+    padding-right: 90px;
+}
