@@ -7,6 +7,7 @@
 
 *{
     margin: 0;
+    scroll-behavior: smooth;
 }
 
 :root{
@@ -25,12 +26,13 @@ header{
     padding: 0;
     display: flex;
     justify-content: space-between;
+    margin: auto;
 }
 
 header img{
     width: 180px;
     padding: 10px 0px 15px 0px;
-    padding-left: 100px;
+    /* padding-left: 100px; */
 }
 
 header ul{
@@ -54,7 +56,7 @@ header nav > ul > li > a{
 /* ------------------------------------------------ Footer ---------------------------------------------*/
 
 footer{
-    margin: 40px;
+    margin: auto;
     border-radius: 12px;
     max-width: 1920px;
     padding: 0;
@@ -187,13 +189,15 @@ main #section1 > div{
     max-width: 955px;
     padding: 0;
     margin: auto;
-    padding-left: 50px;
+    padding-left: 40px;
+    padding-right: 40px;
 }
 
 main #section1 > div > div{
     display: flex;
     flex-wrap: wrap;
     max-width: 955px;
+    gap: 20px;
 }
 
 main #section1 > div > div > a{
@@ -203,8 +207,8 @@ main #section1 > div > div > a{
 }
 
 main #section1 > div > div > a > article img{
-    max-width: 270px;
-    max-height: 160px;
+    height: 160px;
+    width: 100%;
 }
 
 main #section1 > div > div > a > article > div p{
@@ -219,6 +223,37 @@ main #section1 > div a{
     color: var(--black);
     font-size: 18px;
     font-weight: 700;
+}
+
+#section1 div > div > a > article{
+        background-color: white;
+    /* align-items: center; */
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border: 2px;
+    border-radius: 10px;
+}
+
+/* main #section1 > div > div > a > article > div > div > .fa-solid fa-star{
+    color: var(--red);
+} */
+
+#section1 i{
+    color: var(--red);
+}
+
+#section1 i.grey{
+    color: var(--grey);
+}
+
+#Filters i{
+    color: var(--red);
+}
+
+main section > p > i{
+    color: var(--red);
 }
 
 /*---------------------------------------------- Aside -------------------------------------------------*/
@@ -278,9 +313,19 @@ main #section2 > div {
     justify-content: space-between;
 }
 
+main #section2 > div > a{
+    text-decoration: none;
+}
+
 main #section2 > div > a > article > img{
-    max-width: 322px;
-    max-height: 380px;
+    width: 322px;
+    height: 380px;
+    /*padding-top: 12px;*/
+    /*padding-bottom: 12px;*/
+    object-fit: cover;
+    border: 12px;
+    border-radius: 20px;
+    padding: 12px;
 }
 
 main #section2 > div > a > article > h3{
