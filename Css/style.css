@@ -27,7 +27,7 @@ header{
     display: flex;
     justify-content: space-between;
     margin: auto;
-    flex-direction: column;
+    /* flex-direction: column; */
 }
 
 header nav > ul > li{
@@ -36,7 +36,7 @@ header nav > ul > li{
     padding-top: 10px;
     width: -webkit-fill-available;
     text-align: center;
-    border-bottom: 1px solid grey;
+    border-bottom: 1px solid transparent;
 }
 
 header img{
@@ -47,7 +47,7 @@ header img{
 
 header ul{
     list-style: none;
-    /* gap: 35px; */
+    gap: 35px;
     padding: 0;
     /* align-items: center; */
     display: flex;
@@ -55,6 +55,8 @@ header ul{
 
 header nav{
     /* padding: 50px; */
+    display: flex;
+    gap: 50px;
 }
 
 header nav > ul > li > a{
@@ -460,6 +462,10 @@ main #section2 > div > a > article{
         flex-wrap: wrap;
         flex-direction: column;
         padding: 0 15px;
+    }
+
+    header nav{
+        padding-bottom: 20px;
     }
 
     header a > img{
