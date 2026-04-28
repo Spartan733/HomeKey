@@ -27,6 +27,16 @@ header{
     display: flex;
     justify-content: space-between;
     margin: auto;
+    flex-direction: column;
+}
+
+header nav > ul > li{
+    /* border-top: 3px solid red;
+    padding-top: 10px; */
+    padding-top: 10px;
+    width: -webkit-fill-available;
+    text-align: center;
+    border-bottom: 1px solid grey;
 }
 
 header img{
@@ -37,19 +47,23 @@ header img{
 
 header ul{
     list-style: none;
-    gap: 35px;
+    /* gap: 35px; */
     padding: 0;
-    align-items: center;
+    /* align-items: center; */
     display: flex;
 }
 
 header nav{
-    padding: 50px;
+    /* padding: 50px; */
 }
 
 header nav > ul > li > a{
     text-decoration: none;
     color:var(--black);
+
+    &:hover{
+        border-bottom: 1px solid red;
+    }
 }
 
 
@@ -236,7 +250,6 @@ main #section1 > div a{
     padding-bottom: 5px;
     border: 2px;
     border-radius: 10px;
-    height: 256px;
 }
 
 /* main #section1 > div > div > a > article > div > div > .fa-solid fa-star{
@@ -445,6 +458,8 @@ main #section2 > div > a > article{
     header{
         display: flex;
         flex-wrap: wrap;
+        flex-direction: column;
+        padding: 0 15px;
     }
 
     header a > img{
