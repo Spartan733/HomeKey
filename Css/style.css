@@ -65,7 +65,7 @@ footer{
 footer div{
     display: flex;
     justify-content: space-between;
-    max-width: 1440px;
+    max-width: 100%;
     margin: auto;
     background-color: #f1f1f1;
     margin-bottom: 20px;
@@ -94,7 +94,7 @@ footer > p{
 }
 
 footer > div > article{
-    padding-right: 250px;
+    /* padding-right: 250px; */
 }
 
 
@@ -340,6 +340,7 @@ main #section2 > div {
     align-items: center;
     justify-content: space-between;
     gap: 40px;
+    flex-wrap: wrap;
 }
 
 main #section2 > div > a{
@@ -390,7 +391,19 @@ main #section2 > div > a > article{
     }
 
     main #section2 > div{
-        flex-direction: column;
+        /* flex-direction: column; */
+    }
+
+    footer div{
+        flex-wrap: wrap;
+    }
+
+    main aside{
+        width: -webkit-fill-available;
+    }
+
+    main aside > div > article{
+        width: 100%;
     }
 }
 
