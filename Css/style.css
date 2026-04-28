@@ -372,3 +372,29 @@ main #section2 > div > a > article{
     box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.20);
     border-radius: 8px;
 }
+
+/* Responsive
+
+    Taille tablette : de 1024px à 768px
+    taille mobile : de 320px à 767px
+
+*/
+
+@media screen and (max-width:1024px){
+    #section1{
+        flex-direction: column;
+    }
+
+    main #section1 > div > div > a > article > div p{
+        margin-bottom: 10px;
+    }
+
+    main #section2 > div{
+        flex-direction: column;
+    }
+}
+
+
+@media screen and (max-width:767px){
+    
+}
