@@ -404,10 +404,50 @@ main #section2 > div > a > article{
 
     main aside > div > article{
         width: 100%;
+        border: 2px;
+        border-radius: 15px 15px 15px 15px;
+    }
+
+    main aside > div > article > a > div > div h3{
+        padding-bottom: 10px;
+    }
+
+    main aside > div > article > a > div > div p{
+        padding-bottom: 10px;
+    }
+
+    main aside > div > article > a > div > div > div{
+        padding-top: 10px;
     }
 }
 
 
 @media screen and (max-width:767px){
+
+    #section1{
+        width: 100%;
+        flex-direction: column-reverse;
+    }
+
+    main section > div > ul{
+        flex-wrap: wrap;
+    }
+
+    main #section1 > div > div{
+        width: 100%;
+        gap: 40px;
+    }
     
+    footer div{
+        gap: 40px;
+    }
+
+    header{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    header a > img{
+        padding-left: 50px;
+    }
 }
